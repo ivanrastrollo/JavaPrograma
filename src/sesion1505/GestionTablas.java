@@ -1,4 +1,5 @@
 package sesion1505;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -17,7 +18,7 @@ public class GestionTablas {
     }
 
     // Método para crear la tabla "paciente"
-    public static void crearTablasPaciente(Connection conn) throws SQLException {
+    public static void crearTablasPaciente (Connection conn) throws SQLException {
         // Crear la tabla "paciente"
         String queryPaciente = "CREATE TABLE IF NOT EXISTS paciente (" +
                 "id INT PRIMARY KEY," +
@@ -60,3 +61,4 @@ public class GestionTablas {
         System.out.println("Tabla 'habitaciones' eliminada correctamente");
     }
 }
+
